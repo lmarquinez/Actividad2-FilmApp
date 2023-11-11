@@ -1,0 +1,15 @@
+.film-card {
+  width: 250px;
+  height: 350px;
+  margin: 15px;
+}
+
+.mat-card-header {
+  display: flex;
+  align-items: center;
+}
+
+.mat-card-actions {
+  display: flex;
+  justify-content: flex-end;
+}

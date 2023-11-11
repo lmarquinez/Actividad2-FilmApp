@@ -1,0 +1,11 @@
+.film-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.film-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

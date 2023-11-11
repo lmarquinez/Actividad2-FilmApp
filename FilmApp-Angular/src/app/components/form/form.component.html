@@ -1,1 +1,55 @@
-<p>form works!</p>
+<div class="form-container">
+  <mat-card>
+    <mat-card-content>
+      <form class="form" (ngSubmit)="onSubmit()">
+        <mat-form-field class="full-width">
+          <mat-label>Title</mat-label>
+          <input
+            matInput
+            [(ngModel)]="newMovie.title"
+            id="title"
+            type="text"
+            name="title"
+            placeholder="Title of the movie"
+          />
+        </mat-form-field>
+        <mat-form-field class="full-width">
+          <mat-label>Year</mat-label>
+          <input
+            matInput
+            [(ngModel)]="newMovie.year"
+            id="year"
+            type="number"
+            name="year"
+            placeholder="Release year"
+          />
+        </mat-form-field>
+        <mat-form-field class="full-width">
+          <mat-label>Director</mat-label>
+          <input
+            matInput
+            [(ngModel)]="newMovie.director"
+            id="director"
+            type="text"
+            name="director"
+            placeholder="Director of the film"
+          />
+        </mat-form-field>
+        <mat-form-field class="full-width">
+          <mat-label>Image</mat-label>
+          <input
+            matInput
+            [(ngModel)]="newMovie.img"
+            id="img"
+            type="text"
+            name="img"
+            placeholder="Image of the poster"
+          />
+        </mat-form-field>
+        <button mat-raised-button color="primary" type="submit">
+          <mat-icon>add</mat-icon> Add
+        </button>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>

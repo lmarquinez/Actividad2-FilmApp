@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class FormComponent {
 
+  newMovie: any = {};
+
+  onSubmit() {
+    console.log('The data has been send', this.newMovie);
+  }
+
 }
